@@ -41,7 +41,7 @@ export default function TextForm(props) {
   return (
     <>
     <div className='container' style = {{color: props.mode === 'dark'?'white':'#042743'}}>
-        <h1 mb-2disabled={text.length===0} >{props.Heading}</h1>
+        <h1 mb-2="true" disabled={text.length===0} >{props.Heading}</h1>
       <div className="mb-3">
         <textarea className="text form-control" value={text} 
         onChange={handleOnChange} style={{backgroundColor : props.mode ==='dark'?'#13466e':'white',color: props.mode === 'dark'?'white':'#042743'}} id="exampleFormControlTextarea1" rows="8"></textarea>
